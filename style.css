@@ -6,6 +6,17 @@ div {
     border-bottom: 10px;
     border-radius: 2px;
 }
+div[class="dictionary"]{
+    position: fixed;
+    left: 500px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: blue;
+    border-bottom: 10px;
+    border-radius: 2px;
+}
 input[type="text"] {
     width: 400px;
     height: 35px;
