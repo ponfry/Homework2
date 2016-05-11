@@ -1,0 +1,40 @@
+div {
+    width: 500px;
+    height: 100vh;
+    margin: 0;
+    background: lightblue;
+    border-bottom: 10px;
+    border-radius: 2px;
+}
+input[type="text"] {
+    width: 400px;
+    height: 35px;
+    margin: 10px 25px;
+    font-size: 35px;
+    background: lightcyan;
+    color: green;
+
+}
+label[class="enter-label"] {
+    margin: 0 150px;
+    font-size: 20px;
+    color: black;
+}
+button {
+    width: 25%;
+    height: 40px;
+    margin-left: 60%;
+    font-size: 20px;
+    background: red;
+    color: aqua;
+}
+input[type="radio"] {
+    height: 20px;
+}
+label {
+    font-size: 20px;
+    color: black;
+}
+body {
+    margin: 0;
+}
