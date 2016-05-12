@@ -1,4 +1,7 @@
 div {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 500px;
     height: 100vh;
     margin: 0;
@@ -7,11 +10,11 @@ div {
     border-radius: 2px;
 }
 div[class="dictionary"]{
-    position: fixed;
+    position: absolute;
     left: 500px;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
+    top: 0;
+    width: 860px;
+    height: 100%;
     margin: 0;
     background: blue;
     border-bottom: 10px;
@@ -48,4 +51,10 @@ label {
 }
 body {
     margin: 0;
+}
+
+label[class="word"] {
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    color: yellow;
 }
