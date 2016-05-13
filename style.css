@@ -1,27 +1,29 @@
-div {
+div[class="enter"] {
     position: fixed;
     left: 0;
     top: 0;
-    width: 500px;
+    width: 40%;
     height: 100vh;
     margin: 0;
     background: lightblue;
     border-bottom: 10px;
     border-radius: 2px;
+
 }
 div[class="dictionary"]{
     position: absolute;
-    left: 500px;
+    left: 40%;
     top: 0;
-    width: 860px;
-    height: 100%;
+    width: 60%;
     margin: 0;
     background: blue;
     border-bottom: 10px;
     border-radius: 2px;
+    display: block;
+    word-wrap: break-word;
 }
 input[type="text"] {
-    width: 400px;
+    width: 450px;
     height: 35px;
     margin: 10px 25px;
     font-size: 35px;
@@ -35,7 +37,7 @@ label[class="enter-label"] {
     color: black;
 }
 button {
-    width: 25%;
+    width: 150px;
     height: 40px;
     margin-left: 60%;
     font-size: 20px;
@@ -53,7 +55,7 @@ body {
     margin: 0;
 }
 
-label[class="word"] {
+span[class="word"] {
     margin: 0 20px 0 0;
     font-size: 20px;
     color: yellow;
