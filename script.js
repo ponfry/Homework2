@@ -1,34 +1,33 @@
 document.getElementsByClassName("create")[0].onclick = function () {
 
-    var type_new_word = get_type();
-
-    document.getElementsByClassName("dictionary")[0].appendChild(create_new_element("span", "word", get_word));
-    
+    document.getElementsByClassName("dictionary")[0].appendChild(create_new_element("span", "eword", get_english_word));
+    document.getElementsByClassName("dictionary")[0].appendChild(create_new_element("span", "rword", get_russian_word));
     document.getElementsByClassName("dictionary")[0].appendChild(create_new_element("span", get_type(), get_part_of_speech));
 };
 function get_part_of_speech() {
     var type = get_type();
     if(type === "noun"){
-        return "сущ."
+        return "сущ."+"<br>"
     }
     if(type === "adjective"){
-        return "прил."
+        return "прил."+"<br>"
     }
     if(type === "verb"){
-        return "глаг."
+        return "глаг."+"<br>"
     }
     if(type === "pronoun"){
-        return "местоим."
+        return "местоим."+"<br>"
     }
     if(type === "adverb"){
-        return "нар."
+        return "нар."+"<br>"
     }
 
 }
-function get_word() {
-    var english_word = document.getElementsByClassName("english-word")[0].value;
-    var russian_word = document.getElementsByClassName("russian-word")[0].value;
-    return english_word + "-" + russian_word;
+function get_english_word() {
+   return document.getElementsByClassName("english-word")[0].value;
+}
+function get_russian_word() {
+    return document.getElementsByClassName("russian-word")[0].value;
 }
 function get_type() {
     var types = document.getElementsByName("gender");

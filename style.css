@@ -1,4 +1,4 @@
-div[class="enter"] {
+.enter {
     position: fixed;
     left: 0;
     top: 0;
@@ -10,15 +10,24 @@ div[class="enter"] {
     border-radius: 2px;
 
 }
-div[class="dictionary"]{
+.dictionary{
+    position: absolute;
+    width: 600px;
+    margin: 50px 100px 100px;
+    background: darkseagreen;
+    border-bottom: 10px;
+    border-radius: 2px;
+    display: block;
+    word-wrap: break-word;
+}
+.field_dictionary{
     position: absolute;
     left: 40%;
     top: 0;
     width: 60%;
+    height: 100vh;
     margin: 0;
     background: blue;
-    border-bottom: 10px;
-    border-radius: 2px;
     display: block;
     word-wrap: break-word;
 }
@@ -53,10 +62,37 @@ label {
 }
 body {
     margin: 0;
+    background: blue;
 }
-
-span[class="word"] {
-    margin: 0 20px 0 0;
+span {
+    margin: 0 20px 0 ;
     font-size: 20px;
+}
+span[class="eword"] {
+    margin-left: 50px;
     color: yellow;
+}
+span[class="rword"] {
+    margin-left: 50px;
+    color: greenyellow;
+}
+span[class="noun"] {
+    color: red;
+    background: cornflowerblue;
+}
+span[class="adjective"] {
+    color: darkgreen;
+    background: yellow;
+}
+span[class="verb"] {
+    color: fuchsia;
+    background: green;
+}
+span[class="adverb"] {
+    color: azure;
+    background: black;
+}
+span[class="pronoun"] {
+    color: aqua;
+    background: gold;
 }
