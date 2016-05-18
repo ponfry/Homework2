@@ -14,24 +14,26 @@
                 <input type="text" class="russian-word">
             </label>
             <label class="part-of-speech">
-                <input type="radio" name="gender" value="noun" checked>Существительное<br>
+                <input type="radio" name="speech" class="type-speech" value="noun" checked>Существительное<br>
             </label>
             <label class="part-of-speech">
-                <input type="radio" name="gender" value="adjective">Прилагательное<br>
+                <input type="radio" name="speech" class="type-speech" value="adjective">Прилагательное<br>
             </label>
             <label class="part-of-speech">
-                <input type="radio" name="gender" value="verb">Глагол<br>
+                <input type="radio" name="speech" class="type-speech" value="verb">Глагол<br>
             </label>
             <label class="part-of-speech">
-                <input type="radio" name="gender" value="adverb">Наречие<br>
+                <input type="radio" name="speech" class="type-speech" value="adverb">Наречие<br>
             </label>
             <label class="part-of-speech">
-                <input type="radio" name="gender" value="pronoun">Местоимение<br>
+                <input type="radio" name="speech" class="type-speech" value="pronoun">Местоимение<br>
             </label>
             <button class="create">Отправить</button>
         </div>
-        <div class="field_dictionary">
-            <div class="dictionary"></div>
+        <div class="field-dictionary">
+            <div class="dictionary">
+                <table class="dictionary-table"></table>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

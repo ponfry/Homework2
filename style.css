@@ -1,3 +1,74 @@
+body {
+    margin: 0;
+    background: blue;
+}
+input[type="text"] {
+    width: 450px;
+    height: 35px;
+    margin: 10px 25px;
+    font-size: 35px;
+    background: lightcyan;
+    color: green;
+    box-shadow: 2px 2px 10px 1px #888;
+    border: 2px solid #9C9C9C;
+    padding: 2px 10px;
+}
+label.enter-label {
+    margin: 0 120px;
+    font-size: 35px;
+    color: darkblue;
+}
+label.part-of-speech{
+    padding: 0 100px;
+    font-size: 25px;
+}
+button {
+    width: 150px;
+    height: 40px;
+    margin-left: 60%;
+    font-size: 20px;
+    background: red;
+    color: aqua;
+}
+input[type="radio"] {
+    height: 25px;
+}
+label {
+    font-size: 20px;
+    color: black;
+}
+span {
+    margin: 0 20px 0 ;
+    font-size: 20px;
+}
+.eword {
+    margin-left: 50px;
+    color: yellow;
+}
+.rword {
+    margin-left: 50px;
+    color: greenyellow;
+}
+.noun {
+    color: red;
+    background: cornflowerblue;
+}
+.adjective {
+    color: darkgreen;
+    background: yellow;
+}
+.verb {
+    color: fuchsia;
+    background: green;
+}
+.adverb {
+    color: azure;
+    background: black;
+}
+.pronoun {
+    color: aqua;
+    background: gold;
+}
 .enter {
     position: fixed;
     left: 0;
@@ -20,7 +91,7 @@
     display: block;
     word-wrap: break-word;
 }
-.field_dictionary{
+.field-dictionary{
     position: absolute;
     left: 40%;
     top: 0;
@@ -30,69 +101,4 @@
     background: blue;
     display: block;
     word-wrap: break-word;
-}
-input[type="text"] {
-    width: 450px;
-    height: 35px;
-    margin: 10px 25px;
-    font-size: 35px;
-    background: lightcyan;
-    color: green;
-
-}
-label[class="enter-label"] {
-    margin: 0 150px;
-    font-size: 20px;
-    color: black;
-}
-button {
-    width: 150px;
-    height: 40px;
-    margin-left: 60%;
-    font-size: 20px;
-    background: red;
-    color: aqua;
-}
-input[type="radio"] {
-    height: 20px;
-}
-label {
-    font-size: 20px;
-    color: black;
-}
-body {
-    margin: 0;
-    background: blue;
-}
-span {
-    margin: 0 20px 0 ;
-    font-size: 20px;
-}
-span[class="eword"] {
-    margin-left: 50px;
-    color: yellow;
-}
-span[class="rword"] {
-    margin-left: 50px;
-    color: greenyellow;
-}
-span[class="noun"] {
-    color: red;
-    background: cornflowerblue;
-}
-span[class="adjective"] {
-    color: darkgreen;
-    background: yellow;
-}
-span[class="verb"] {
-    color: fuchsia;
-    background: green;
-}
-span[class="adverb"] {
-    color: azure;
-    background: black;
-}
-span[class="pronoun"] {
-    color: aqua;
-    background: gold;
 }

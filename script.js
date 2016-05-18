@@ -1,57 +1,57 @@
-document.getElementsByClassName("create")[0].onclick = function () {
-
-    document.getElementsByClassName("dictionary")[0].appendChild(createNewElement("span", "eword", getEnglishWord));
-    document.getElementsByClassName("dictionary")[0].appendChild(createNewElement("span", "rword", getRussianWord));
-    document.getElementsByClassName("dictionary")[0].appendChild(createNewElement("span", getType(), getPartOfSpeech));
+getElements("create")[0].onclick = function () {
+    getElements("dictionary-table")[0].appendChild(createNewRow());
 };
 
 function getPartOfSpeech() {
-    // var type = getType();
-    // if(type === "noun"){
-    //     return "сущ."+"<br>"
-    // }
-    // if(type === "adjective"){
-    //     return "прил."+"<br>"
-    // }
-    // if(type === "verb"){
-    //     return "глаг."+"<br>"
-    // }
-    // if(type === "pronoun"){
-    //     return "местоим."+"<br>"
-    // }
-    // if(type === "adverb"){
-    //     return "нар."+"<br>"
-    // }
-    
+    var type = getType();
     return TYPES[type];
-
 }
 
 function getEnglishWord() {
-   return document.getElementsByClassName("english-word")[0].value;
+   return getElements("english-word")[0].value;
 }
 
 function getRussianWord() {
-    return document.getElementsByClassName("russian-word")[0].value;
+    return getElements("russian-word")[0].value;
 }
 
 function getType() {
-    var types = document.getElementsByName("gender");
-    for (var i = 0; i < types.length; i++) {
-        if (types[i].checked) {
-            return types[i].value;
-        }
-    }
+    var types = getElements("type-speech");
+    var array = Array.prototype.slice.apply(types);
+
+    return array.find(function(element){ return element.checked; }).value;
 }
 
-function createNewElement(type, className, action) {
-    var newElement= document.createElement(type);
+function createNewRow() {
+    var td1 = createNewElement("td", "eword", getEnglishWord);
+    var td2 = createNewElement("td", "rword", getRussianWord);
+    var td3 = createNewElement("td", getType(), getPartOfSpeech);
+
+    var tr1 =  document.createElement("tr");
+    tr1.appendChild(td1);
+    tr1.appendChild(td2);
+    tr1.appendChild(td3);
+
+    return tr1;
+}
+
+function createNewElement(type, className, wayCreate) {
+    var newElement = document.createElement(type);
     newElement.className = className;
-    newElement.innerHTML = action();
+    newElement.innerHTML = wayCreate();
 
     return newElement;
 }
 
+function getElements(field) {
+    return document.getElementsByClassName(field);
+}
+
 var TYPES = {
-    noun: "сущ.\n"
+    noun: "сущ.\n",
+    adjective: "прил.\n",
+    verb: "глаг.\n",
+    pronoun: "местоим. \n",
+    adverb: "нар.\n"
 };
+
