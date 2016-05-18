@@ -1,41 +1,68 @@
 body {
     margin: 0;
-    background: blue;
+    background: #769BD2;
 }
 input[type="text"] {
     width: 450px;
     height: 35px;
-    margin: 10px 25px;
+    margin: 7px 25px;
     font-size: 35px;
     background: lightcyan;
     color: green;
-    box-shadow: 2px 2px 10px 1px #888;
-    border: 2px solid #9C9C9C;
-    padding: 2px 10px;
-}
-label.enter-label {
-    margin: 0 120px;
-    font-size: 35px;
-    color: darkblue;
-}
-label.part-of-speech{
-    padding: 0 100px;
-    font-size: 25px;
-}
-button {
-    width: 150px;
-    height: 40px;
-    margin-left: 60%;
-    font-size: 20px;
-    background: red;
-    color: aqua;
+    box-shadow: 7px 6px 14px 5px #888;
+    border: 1px solid #9C9C9C;
+    padding: 7px 24px;
+    border-radius: 7px;
 }
 input[type="radio"] {
     height: 25px;
 }
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background: #4EB1EC;
+    color: #0E4C17;
+    margin: 44px 309px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 27px 13px #4EB1EC;
+}
 label {
     font-size: 20px;
-    color: black;
+    color: #0B4810;
+}
+table{
+    background: #790000;
+    width: 100%;
+    text-align: center;
+}
+tr {
+    height: 30px;
+    font-size: 25px;
+}
+tr.eword{
+    width: 40%;
+}
+tr.rword{
+    width: 40%;
+}
+td{
+    width: 10px;
+}
+.enter-label {
+    display: block;
+    font-size: 35px;
+    color: darkblue;
+    text-align: center;
+    padding: 26px 0 0;
+}
+.part-of-speech{
+    display: block;
+    padding: 9px 0;
+    font-size: 25px;
+    text-shadow: 1px 0 69px #040404;
+    text-align: center;
 }
 span {
     margin: 0 20px 0 ;
@@ -52,28 +79,33 @@ span {
 .noun {
     color: red;
     background: cornflowerblue;
+    width: 20%;
 }
 .adjective {
     color: darkgreen;
     background: yellow;
+    width: 20%;
 }
 .verb {
     color: fuchsia;
     background: green;
+    width: 20%;
 }
 .adverb {
     color: azure;
     background: black;
+    width: 20%;
 }
 .pronoun {
     color: aqua;
     background: gold;
+    width: 20%;
 }
 .enter {
     position: fixed;
     left: 0;
     top: 0;
-    width: 40%;
+    width: 546px;
     height: 100vh;
     margin: 0;
     background: lightblue;
@@ -98,7 +130,6 @@ span {
     width: 60%;
     height: 100vh;
     margin: 0;
-    background: blue;
     display: block;
     word-wrap: break-word;
 }
