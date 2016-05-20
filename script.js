@@ -1,3 +1,8 @@
+$(document).ready( function(){
+    
+});
+
+
 getElements("create")[0].onclick = function () {
     getElements("dictionary-table")[0].appendChild(createNewRow());
 };
@@ -54,4 +59,3 @@ var TYPES = {
     pronoun: "местоим. \n",
     adverb: "нар.\n"
 };
-
