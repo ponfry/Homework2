@@ -40,7 +40,10 @@ button:hover {
 }
 label {
     font-size: 20px;
-    color: #0B4810;
+    color: #090186;
+}
+label:hover{
+    color: red;
 }
 table{
     background: #790000;
@@ -58,8 +61,13 @@ tr.eword{
 tr.rword{
     width: 40%;
 }
+th{
+    background: #B3B3C5;
+    color: #1A0A71;
+    font-size: 20px;
+}
 td{
-    width: 10px;
+    width: 40%;
 }
 .enter-label {
     display: block;
@@ -72,16 +80,8 @@ td{
     display: block;
     padding: 9px 0;
     font-size: 25px;
-    text-shadow: 1px 0 69px #040404;
+    text-shadow: 1px 0 69px #124188;
     text-align: center;
-}
-.part-of-speech :hover {
-    box-shadow: 0 0 5px 7px red ;
-    border-radius: 10px;
-}
-span {
-    margin: 0 20px 0 ;
-    font-size: 20px;
 }
 .eword {
     margin-left: 50px;
@@ -104,8 +104,8 @@ span {
     width: 20%;
 }
 .verb {
-    color: fuchsia;
-    background: green;
+    color: #00BCD4;
+    background: #A91919;
     width: 20%;
 }
 .adverb {
@@ -115,7 +115,7 @@ span {
 }
 .pronoun {
     color: aqua;
-    background: gold;
+    background: #A28F25;
     width: 20%;
 }
 .enter {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="jquery-2.2.3.min.js"></script>
         <meta charset="UTF-8">
         <title>Homework2</title>
         <link rel="stylesheet" href="style.css">
@@ -8,10 +9,10 @@
     <body>
         <div class="enter">
             <label class="enter-label"> Английское слово
-                <input type="text" class="english-word" maxlength="20">
+                <input type="text" class="english-word" maxlength="14">
             </label>
             <label class="enter-label"> Перевод на русский
-                <input type="text" class="russian-word" maxlength="20">
+                <input type="text" class="russian-word" maxlength="14">
             </label>
             <label class="part-of-speech">
                 <input type="radio" name="speech" class="type-speech" value="noun" checked>Существительное<br>
@@ -33,9 +34,16 @@
         <div class="field-dictionary">
             <div class="dictionary">
                 <label class="enter-label">Словарь</label>
-                <table class="dictionary-table"></table>
+
+                <table class="dictionary-table">
+                    <tr>
+                        <th data-type="string">Английское слово</th>
+                        <th data-type="string">Русское слово</th>
+                        <th data-type="string">Часть речи</th>
+                    </tr>
+                </table>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="scriptjq.js"></script>
     </body>
 </html>

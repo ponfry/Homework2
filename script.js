@@ -1,8 +1,3 @@
-$(document).ready( function(){
-    
-});
-
-
 getElements("create")[0].onclick = function () {
     getElements("dictionary-table")[0].appendChild(createNewRow());
 };
