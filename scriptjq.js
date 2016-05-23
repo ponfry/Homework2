@@ -46,11 +46,18 @@ function englishWord() {
 }
 
 function partOfSpeech() {
-    var result = "<td class='noun'>";
-    result += getElements("[checked].type-speech").val()
-    console.log(getElements("[checked].type-speech"));
+    var element = $("input[name=speech]:checked");
+    var result = "<td class='"+element.val()+"'>";
+    result += TYPES[element.val()];
     result += "</td>";
 
     return result;
 }
+var TYPES = {
+    noun: "сущ.\n",
+    adjective: "прил.\n",
+    verb: "глаг.\n",
+    pronoun: "местоим. \n",
+    adverb: "нар.\n"
+};
 //String.prototype.concat()
